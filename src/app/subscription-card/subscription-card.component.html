@@ -1,0 +1,23 @@
+    <section class="pricing py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4"  *ngFor="let subs of subscription">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">{{subs.type}}</h5>
+                  <h6 class="card-price text-center">{{subs.money_per_month}}<span class="period">/month</span></h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li *ngFor="let mysubs of subs.features"><i class="fa" 
+                    [ngClass]="mysubs[1] ? 'fa-check' : 'fa-times'">
+                    </i><span [ngStyle]="{'opacity':mysubs[1]?2:0.5}" 
+                    [innerHTML]="mysubs[0]"></span></li>
+                  </ul>
+                  <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    

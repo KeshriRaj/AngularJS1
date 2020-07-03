@@ -30,7 +30,7 @@ export class SubscriptionCardComponent implements OnInit {
       type: "PLUS",
       money_per_month: "$9",
       features: [
-       ["5 Users",true],
+       [`<b>5 Users</b>`,true],
        ["50GB Storage",true],
        ["Unlimited Public Projects",true],
        ["Community Access",true],
@@ -44,7 +44,7 @@ export class SubscriptionCardComponent implements OnInit {
         type: "PRO",
         money_per_month: "$49",
         features: [
-         ["Unlimited User",true],
+         [`<b>Unlimited User</b>`,true],
          ["150GB Storage",true],
          ["Unlimited Public Projects",true],
          ["Community Access",true],

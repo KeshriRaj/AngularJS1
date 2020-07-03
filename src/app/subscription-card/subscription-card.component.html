@@ -9,7 +9,8 @@
                   <hr>
                   <ul class="fa-ul">
                     <li *ngFor="let mysubs of subs.features"><i class="fa" 
-                    [ngClass]="mysubs[1] ? 'fa-check' : 'fa-times'">
+                    [ngClass]="mysubs[1] ? 'fa-check' : 'fa-times'
+                    " [ngStyle]="{'color': mysubs[1] ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,0.5)'}">
                     </i><span [ngStyle]="{'opacity':mysubs[1]?2:0.5}" 
                     [innerHTML]="mysubs[0]"></span></li>
                   </ul>
